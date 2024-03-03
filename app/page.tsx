@@ -1,3 +1,5 @@
+"use client"
+
 import { Layout } from '../components/Layout'
 import { useSession } from '../utils/hooks/useSession'
 

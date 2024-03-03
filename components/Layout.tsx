@@ -18,9 +18,9 @@ export function Layout({ session, children }: PropsWithChildren<Props>) {
         <header className="p-4 border-b bg-white flex justify-between">
           <h1>
             <Link href="/">
-              <a className="text-red-800 hover:text-red-700 drop-shadow">
+              {/* <a className="text-red-800 hover:text-red-700 drop-shadow"> */}
                 Next.js + TypeScript + Supabase + TailwindCSS
-              </a>
+              {/* </a> */}
             </Link>
           </h1>
           <Menu session={session} />

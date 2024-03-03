@@ -33,7 +33,9 @@ export function Menu({ session }: Props) {
         <>
           <li>
             <Link href="/signin">
-              <a className="btn-link">Sign in/Sign up</a>
+              {/* <a className="btn-link"> */}
+                Sign in/Sign up
+                {/* </a> */}
             </Link>
           </li>
         </>
