@@ -1,7 +1,7 @@
 import { AuthSession } from '@supabase/supabase-js'
 import { useEffect, useState } from 'react'
 import { definitions } from '../../types/supabase'
-import { supabase } from '../supabaseClient'
+import { supabase } from '../supabaseClient.ts123'
 
 export interface Profile {
   username: string

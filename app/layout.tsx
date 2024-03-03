@@ -5,6 +5,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // Add authentication logic here. e.g: https://github.com/amol-c/ai-trading-partner/blob/main/app/dashboard/layout.tsx
   return (
     <html lang="en">
       <head>

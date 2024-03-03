@@ -1,7 +1,7 @@
 import { AuthSession } from '@supabase/supabase-js'
 import { useState, useEffect } from 'react'
 import { useProfile } from '../utils/hooks/useProfile'
-import { supabase } from '../utils/supabaseClient'
+import { supabase } from '../utils/supabase/client'
 import { EditAvatar } from './EditAvatar'
 
 export interface Props {

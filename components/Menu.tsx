@@ -1,7 +1,7 @@
 import { AuthSession } from '@supabase/supabase-js'
 import Link from 'next/link'
 import Router from 'next/router'
-import { supabase } from '../utils/supabaseClient'
+import { supabase } from '../utils/supabase/client'
 
 export interface Props {
   session: AuthSession | null

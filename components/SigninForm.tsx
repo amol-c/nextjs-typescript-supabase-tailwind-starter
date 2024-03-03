@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { supabase } from '../utils/supabaseClient'
+import { supabase } from '../utils/supabase/client'
 
 export function SigninForm() {
   const [loading, setLoading] = useState(false)
@@ -9,7 +9,7 @@ export function SigninForm() {
   const handleLogin = async (email: string) => {
     try {
       setLoading(true)
-      const { error } = await supabase.auth.signIn({ email })
+      const { error } = await supabase.auth.signInWithOtp({ email, options: {shouldCreateUser: false} })
       if (error) throw error
       setEmailSent(true)
     } catch (error: any) {
